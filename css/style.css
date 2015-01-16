@@ -2086,7 +2086,7 @@ Color styles
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------- default green ---------------------------------------------*/
-/*
+
 ::selection {
 	background: #54BABB;
 	color:#fff;
@@ -2131,10 +2131,10 @@ Color styles
 }
 #services-carusel .owl-next , #project-slider .owl-next , #testimonials .owl-next{background:#54BABB url(../images/sr.png) no-repeat center;}
 #services-carusel .owl-prev ,#project-slider .owl-prev , #testimonials .owl-prev {background:#54BABB url(../images/sl.png) no-repeat center;}
-/*
+
 
 /*----------------------------------------------------- blue style --------------------------------------------- */
-
+/*
 ::selection {
 	background: #6DCFF6;
 }
@@ -2177,7 +2177,7 @@ Color styles
 }
 #services-carusel .owl-next , #project-slider .owl-next , #testimonials .owl-next{background:#6DCFF6 url(../images/sr.png) no-repeat center;}
 #services-carusel .owl-prev ,#project-slider .owl-prev , #testimonials .owl-prev{background:#6DCFF6 url(../images/sl.png) no-repeat center;}
-
+*/
 
 /*----------------------------------------------------- red style --------------------------------------------- */
 /*
