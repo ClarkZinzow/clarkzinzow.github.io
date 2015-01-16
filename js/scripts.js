@@ -111,8 +111,11 @@ function initChulan() {
 				
 		}, 500 );
 	var text = $('.show-skills').find('span').text();
+	var textOther = $('.view-skills').find('span').text();
     $('.show-skills').find('span').text(
         text == "Show Development Skills" ? "Hide Development Skills" : "Show Development Skills");
+    $('.view-skills').find('span').text(
+    	textOther == "View Development Skills" ? "Hide Development Skills" : "View Development Skills");
 	});
 	$(".view-skills").click( function(){
 		$(this).find('i').toggleClass('but-rotade');
@@ -127,8 +130,11 @@ function initChulan() {
 				
 		}, 500 );
 	var text = $('.view-skills').find('span').text();
+	var textOther = $('.show-skills').find('span').text();
     $('.view-skills').find('span').text(
         text == "View Development Skills" ? "Hide Development Skills" : "View Development Skills");
+    $('.show-skills').find('span').text(
+    	textOther == "Show Development Skills" ? "Hide Development Skills" : "Show Development Skills");
 	});
 	
 // MagnificPopup  ----------------------------------------	
