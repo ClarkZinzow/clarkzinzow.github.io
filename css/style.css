@@ -690,7 +690,7 @@ Skills
 	text-align:left;
 	font-size:0.7em;
 }
-.piechart-holder span#proficiency {
+.piechart-holder p span#proficiency {
 	text-align: center;
 	font-weight: bold;
 }
