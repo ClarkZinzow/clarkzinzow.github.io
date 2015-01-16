@@ -114,6 +114,22 @@ function initChulan() {
     $('.show-skills').find('span').text(
         text == "show skills" ? "hide skills" : "show skills");
 	});
+	$(".view-skills").click( function(){
+		$(this).find('i').toggleClass('but-rotade');
+		$('.piechart-holder').slideToggle(500);
+		setTimeout (function (){
+			$('.chart').easyPieChart({
+				easing: 'easeOutBounce',
+				onStep: function(from, to, percent) {
+					$(this.el).find('.percent').text(Math.round(percent));
+				}
+			});
+				
+		}, 500 );
+	var text = $('.view-skills').find('span').text();
+    $('.view-skills').find('span').text(
+        text == "show skills" ? "hide skills" : "show skills");
+	});
 	
 // MagnificPopup  ----------------------------------------	
 
