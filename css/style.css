@@ -2407,4 +2407,9 @@ User added
 
 .classes-taken th {
 	font-weight: bold;
+	border: 1px solid black;
+}
+
+.classes-taken td {
+	border: 1px solid black;
 }
