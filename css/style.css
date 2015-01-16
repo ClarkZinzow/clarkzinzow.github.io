@@ -2171,7 +2171,7 @@ Color styles
 */
 
 /*----------------------------------------------------- red style --------------------------------------------- */
-
+/*
 ::selection {
 	background: #F54A4B;
 }
@@ -2214,9 +2214,9 @@ Color styles
 }
 #services-carusel .owl-next , #project-slider .owl-next , #testimonials .owl-next{background:#F54A4B url(../images/sr.png) no-repeat center;}
 #services-carusel .owl-prev ,#project-slider .owl-prev , #testimonials .owl-prev {background:#F54A4B url(../images/sl.png) no-repeat center;}
-
+*/
 /*----------------------------------------------------- yellow style --------------------------------------------- */
-/*
+
 ::selection {
 	background: #FFDB5D;
 }
@@ -2259,7 +2259,7 @@ Color styles
 }
 #services-carusel .owl-next , #project-slider .owl-next , #testimonials .owl-next{background:#FFDB5D url(../images/sr.png) no-repeat center;}
 #services-carusel .owl-prev ,#project-slider .owl-prev , #testimonials .owl-prev {background:#FFDB5D url(../images/sl.png) no-repeat center;}
-*/
+
 
 /* ====================
 CSS animation
