@@ -118,7 +118,7 @@ function initChulan() {
     	textOther == "View Development Skills" ? "Hide Development Skills" : "View Development Skills");
 	});
 	$(".view-skills").click( function(){
-		$(this).find('i').toggleClass('but-rotade');
+		$('.show-skills').find('i').toggleClass('but-rotade');
 		$('.piechart-holder').slideToggle(500);
 		setTimeout (function (){
 			$('.chart').easyPieChart({
