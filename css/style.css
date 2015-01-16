@@ -678,7 +678,7 @@ Skills
 	display:none;
 }
 .piechart-holder p {
-	text-align:left !important;
+	text-align:left;
 	font-size:0.7em;
 }
 .piechart-holder h4{
