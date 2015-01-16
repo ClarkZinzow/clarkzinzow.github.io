@@ -347,8 +347,7 @@ $(document).ready(function(){
 	
 	// your coordinates   --------
 	
-	var Chulan = new google.maps.LatLng(40.761467,-73.956379);	
-	function initialize() {	
+	var UWMadison = new google.maps.LatLng(43.0750, -89.4172);
 	   var styles = [
     {
 		featureType: 'water',
@@ -422,7 +421,7 @@ $(document).ready(function(){
 		scaleControl: false,
 		scrollwheel: false,
 		disableDefaultUI:true,
-		center: Chulan,
+		center: UWMadison,
 		mapTypeControlOptions: {
 		   mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'bestfromgoogle']
 		}
@@ -430,7 +429,7 @@ $(document).ready(function(){
 	map = new google.maps.Map(document.getElementById("map_canvas"),
 		 mapOptions);
 	var styledMapOptions = {
-		  name: "Chulan"
+		  name: "UWMadison"
 	}	
 	var jayzMapType = new google.maps.StyledMapType(
 		styles, styledMapOptions);
