@@ -558,6 +558,7 @@ Skills
 
 .view-skills{
 	cursor:pointer;
+	float:right;
 }
 
 .show-skills{
