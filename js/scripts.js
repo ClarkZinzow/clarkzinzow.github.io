@@ -347,7 +347,8 @@ $(document).ready(function(){
 	
 	// your coordinates   --------
 	
-	var UWMadison = new google.maps.LatLng(43.0750, -89.4172);
+	var UWMadison = new google.maps.LatLng(43.0750, -89.4172);	
+	function initialize() {	
 	   var styles = [
     {
 		featureType: 'water',
