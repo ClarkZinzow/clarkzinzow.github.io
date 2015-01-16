@@ -2393,3 +2393,18 @@ Retina
 	font-size:18px;
 }
 }
+
+/* ==================
+User added
+--------------------------------------------------------------*/
+
+.classes-taken {
+	font-size: 0.8em;
+	text-align: center;
+	padding: 3px;
+	border: 1px solid black;
+}
+
+.classes-taken th {
+	font-weight: bold;
+}
