@@ -2125,7 +2125,7 @@ Color styles
 /*
 
 /*----------------------------------------------------- blue style --------------------------------------------- */
-/*
+
 ::selection {
 	background: #6DCFF6;
 }
@@ -2168,7 +2168,7 @@ Color styles
 }
 #services-carusel .owl-next , #project-slider .owl-next , #testimonials .owl-next{background:#6DCFF6 url(../images/sr.png) no-repeat center;}
 #services-carusel .owl-prev ,#project-slider .owl-prev , #testimonials .owl-prev{background:#6DCFF6 url(../images/sl.png) no-repeat center;}
-*/
+
 
 /*----------------------------------------------------- red style --------------------------------------------- */
 /*
@@ -2216,7 +2216,7 @@ Color styles
 #services-carusel .owl-prev ,#project-slider .owl-prev , #testimonials .owl-prev {background:#F54A4B url(../images/sl.png) no-repeat center;}
 */
 /*----------------------------------------------------- yellow style --------------------------------------------- */
-
+/*
 ::selection {
 	background: #FFDB5D;
 }
@@ -2259,7 +2259,7 @@ Color styles
 }
 #services-carusel .owl-next , #project-slider .owl-next , #testimonials .owl-next{background:#FFDB5D url(../images/sr.png) no-repeat center;}
 #services-carusel .owl-prev ,#project-slider .owl-prev , #testimonials .owl-prev {background:#FFDB5D url(../images/sl.png) no-repeat center;}
-
+*/
 
 /* ====================
 CSS animation
