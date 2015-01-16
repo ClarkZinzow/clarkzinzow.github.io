@@ -556,6 +556,10 @@ About
 Skills
 --------------------------------------------------------------*/
 
+.view-skills{
+	cursor:pointer;
+}
+
 .show-skills{
 	position:absolute;
 	top:0;
