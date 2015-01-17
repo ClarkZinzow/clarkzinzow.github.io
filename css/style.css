@@ -551,6 +551,13 @@ About
 	-ms-transform: rotate(3deg);
 	transform: rotate(3deg);
 }
+.button-skills{
+	padding:10px 30px;
+	color:#fff;
+	border-radius:6px;
+	border-bottom:4px solid #ccc;
+	position:relative;
+}
 
 /* ====================
 Skills
