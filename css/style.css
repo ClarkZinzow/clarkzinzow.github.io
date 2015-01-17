@@ -534,10 +534,12 @@ About
 }
 .button-center.button{
 	padding:10px 30px;
+	display:inline-block;
 	color:#fff;
 	border-radius:6px;
 	border-bottom:4px solid #ccc;
 	position:relative;
+	float:none;
 }
 .button:before{
 	z-index: -1;
