@@ -532,6 +532,13 @@ About
 	border-bottom:4px solid #ccc;
 	position:relative;
 }
+.button-center.button{
+	padding:10px 30px;
+	color:#fff;
+	border-radius:6px;
+	border-bottom:4px solid #ccc;
+	position:relative;
+}
 .button:before{
 	z-index: -1;
 	position: absolute;
