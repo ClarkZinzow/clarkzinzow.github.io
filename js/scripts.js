@@ -305,7 +305,7 @@ $(document).ready(function(){
 	});
 // Contact submit  ----------------------------------------
 
-	/*$("#submit_btn").click(function(){		
+	$("#submit_btn").click(function(){		
 		var user_name=$('input[name=name]').val();
 		var user_email=$('input[name=email]').val();
 		var user_message=$('textarea[name=message]').val();
@@ -324,17 +324,17 @@ $(document).ready(function(){
 			}
 			if(proceed){
 				post_data={'userName':user_name,'userEmail':user_email,'userMessage':user_message};
-				$.post('php/contact_me.php',
+				$.post('//formspree.io/czinzow@wisc.edu',
 				post_data,
 				function(data){
 					$("#result").hide().html('<div class="success">'+data+'</div>').fadeIn(700);
 					$('#contact_form input').val('');
-					$('#contact_form textarea').val('')}).fail(
+					$('#contact_form textarea').val('')}, "json").fail(
 					function(err){
 						$("#result").hide().html('<div class="error">'+err.statusText+'</div>').fadeIn(1500);
 				});
 			}
-	});*/
+	});
 	
 	$("#contact_form input, #contact_form textarea").keyup(function(){		
 			$("#contact_form input, #contact_form textarea").css('border','2px solid #fff');
