@@ -327,7 +327,7 @@ $(document).ready(function(){
 				$.post('//formspree.io/czinzow@wisc.edu',
 				post_data,
 				function(data){
-					$("#result").hide().html('<div class="success">'+data+'</div>').fadeIn(700);
+					$("#result").hide().html('<div class="success">Thanks for the submission!  I&apos;ll get back to you shorly'</div>').fadeIn(700);
 					$('#contact_form input').val('');
 					$('#contact_form textarea').val('')}, "json").fail(
 					function(err){
