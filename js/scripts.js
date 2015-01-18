@@ -331,7 +331,8 @@ $(document).ready(function(){
 					$('#contact_form input').val('');
 					$('#contact_form textarea').val('')}).fail(
 					function(err){
-						$("#result").hide().html('<div class="error">'+err+'</div>').fadeIn(1500)
+						window.console && console.log("err object %o", err);
+						$("#result").hide().html('<div class="error">'+err.statusText+'</div>').fadeIn(1500);
 				});
 			}
 	});
