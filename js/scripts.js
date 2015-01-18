@@ -347,7 +347,7 @@ $(document).ready(function(){
 	
 	// your coordinates   --------
 	
-	var UWMadison = new google.maps.LatLng(43.076812, -89.400421);	
+	var UWMadison = new google.maps.LatLng(43.073234, -89.390774);	
 	function initialize() {	
 	   var styles = [
     {
@@ -444,7 +444,7 @@ $(document).ready(function(){
 	
 	// your marker coordinates   --------
 	
-	var companyPos = new google.maps.LatLng(40.761467,-73.956379);
+	var companyPos = new google.maps.LatLng(43.073234, -89.390774);
 	var companyMarker = new google.maps.Marker({
 		position: companyPos,
 		map: map,
