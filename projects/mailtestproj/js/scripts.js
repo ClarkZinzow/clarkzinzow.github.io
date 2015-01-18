@@ -17,6 +17,8 @@ function initChulan() {
 	"use strict";
 	
 	$('h1.animtext').fitText(1.8,{minFontSize:'20px',maxFontSize:'72px'});
+
+	jQuery.support.cors = true;
 	
 // counter ------------------
 
