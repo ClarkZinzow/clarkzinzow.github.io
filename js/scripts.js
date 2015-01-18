@@ -305,7 +305,7 @@ $(document).ready(function(){
 	});
 // Contact submit  ----------------------------------------
 
-	$("#submit_btn").click(function(){		
+	/*$("#submit_btn").click(function(){		
 		var user_name=$('input[name=name]').val();
 		var user_email=$('input[name=email]').val();
 		var user_message=$('textarea[name=message]').val();
@@ -331,11 +331,10 @@ $(document).ready(function(){
 					$('#contact_form input').val('');
 					$('#contact_form textarea').val('')}).fail(
 					function(err){
-						window.console && console.log("err object %o", err);
 						$("#result").hide().html('<div class="error">'+err.statusText+'</div>').fadeIn(1500);
 				});
 			}
-	});
+	});*/
 	
 	$("#contact_form input, #contact_form textarea").keyup(function(){		
 			$("#contact_form input, #contact_form textarea").css('border','2px solid #fff');
@@ -346,7 +345,7 @@ $(document).ready(function(){
 
 	var map;
 	
-	// your coordinates   --------
+	// coordinates   --------
 	
 	var UWMadison = new google.maps.LatLng(43.073234, -89.390774);	
 	function initialize() {	
@@ -443,7 +442,7 @@ $(document).ready(function(){
 		new google.maps.Point(64,64)
 	);
 	
-	// your marker coordinates   --------
+	// marker coordinates   --------
 	
 	var companyPos = new google.maps.LatLng(43.073234, -89.390774);
 	var companyMarker = new google.maps.Marker({
