@@ -343,6 +343,8 @@ $(document).ready(function(){
 
 // google map styles and functions  --------
 
+	/*
+
 	var map;
 	
 	// coordinates   --------
@@ -452,6 +454,9 @@ $(document).ready(function(){
 		zIndex: 3
 	});
 }
+*/
+
+
 //  definition of mobile browser------------------
 
 	var isMobile = { 
