@@ -2554,23 +2554,10 @@ Retina
 /* ==================
 User added
 --------------------------------------------------------------*/
-/*
-.classes-taken {
-	font-size: 0.8em;
-	text-align: center;
-	padding: 3px;
-	border: 1px solid black;
-}
 
-.classes-taken th {
-	font-weight: bold;
-	border: 1px solid black;
+.table-container-table td {
+	vertical-align: top;
 }
-
-.classes-taken td {
-	border: 1px solid black;
-}
-*/
 .classes-taken {
   margin: 15px auto;
   border-collapse: collapse;
@@ -2587,7 +2574,7 @@ User added
 .classes-taken th, table td {
   color: #999;
   border: 1px solid #eee;
-  padding: 8px 25px;
+  padding: 8px 15px;
   border-collapse: collapse;
 }
 .classes-taken th {

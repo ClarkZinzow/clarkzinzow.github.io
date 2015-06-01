@@ -294,6 +294,12 @@ function initChulan() {
 $(document).ready(function(){	
 	initChulan();		
 });
+	var tabCol = 0;
+
+    if ($(window).width() < 740) {
+        colTable();
+        tabCol = 1;
+    }
 	$(window).resize(function(){
 		var ww4 = $(window).width();
 		if( ww4 < 959){
@@ -301,8 +307,28 @@ $(document).ready(function(){
 		}
 		else if (ww4 > 959){
 			$('.link-holder').css('display','block')			
-		}	
+		}
+		 if (ww4 < 740) {
+            if(!tabCol) {
+                colTable();
+                tabCol = 1;
+            }
+        } else {
+            if(tabCol) {
+                rowTable();
+                tabCol = 0;
+            }
+        }
 	});
+    
+    function colTable() {
+        $('.classes-taken').unwrap();
+        $('.classes-taken#cs-table').unwrap().unwrap().unwrap();
+    }
+    
+    function rowTable() {
+        $('.classes-taken').wrap('<td></td>').parent().wrapAll('<table><tbody><tr></tr></tbody></table>').parent().parent().parent().attr("class", "table-container-table");
+    }
 // Contact submit  ----------------------------------------
 
 	$("#submit_btn").click(function(){		
