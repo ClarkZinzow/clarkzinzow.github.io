@@ -322,7 +322,8 @@ $(document).ready(function(){
 	});
     
     function colTable() {
-        $('.classes-taken').unwrap().unwrap().unwrap().unwrap();
+        $('.classes-taken').unwrap();
+        $('.classes-taken#cs-table').unwrap().unwrap().unwrap();
     }
     
     function rowTable() {
