@@ -2557,6 +2557,8 @@ User added
 
 .table-container-table td {
 	vertical-align: top;
+	padding: 4px;
+	border: none;
 }
 .classes-taken {
   margin: 15px auto;
