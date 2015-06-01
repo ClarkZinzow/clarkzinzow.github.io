@@ -2574,7 +2574,7 @@ User added
 .classes-taken tr:hover td {
   color: #555;
 }
-.classes-taken th, table td {
+.classes-taken th, .classes-taken td {
   color: #999;
   border: 1px solid #eee;
   padding: 8px 15px;
