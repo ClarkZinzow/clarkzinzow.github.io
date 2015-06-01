@@ -2572,8 +2572,7 @@ User added
 }
 */
 .classes-taken {
-  font-family: 'Arial';
-  margin: 25px auto;
+  margin: 15px auto;
   border-collapse: collapse;
   border: 1px solid #eee;
   border-bottom: 2px solid #00cccc;
@@ -2588,14 +2587,14 @@ User added
 .classes-taken th, table td {
   color: #999;
   border: 1px solid #eee;
-  padding: 12px 35px;
+  padding: 8px 25px;
   border-collapse: collapse;
 }
 .classes-taken th {
   background: #00cccc;
   color: #fff;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.8em;
 }
 .classes-taken th.last {
   border-right: none;
