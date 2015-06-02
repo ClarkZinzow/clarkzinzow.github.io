@@ -2540,11 +2540,9 @@ Smartphone / small tablet
 }
 
 @media only screen and (max-width: 440px) {
-	.view-skills a {
-		float: left;
-	}
 	.about-button {
 		margin: 5px;
+		float: left;
 	}
 }
 /* ====================
