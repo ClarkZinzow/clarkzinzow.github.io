@@ -303,13 +303,13 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		var ww4 = $(window).width();
 		var ww4alt = viewport().width;
-		if( ww4 < 959){
+		if( ww4alt < 959){
 			$('.link-holder').css('display','none')		
 		}
-		else if (ww4 > 959){
+		else if (ww4alt > 959){
 			$('.link-holder').css('display','block')			
 		}
-		if (ww4 < 915 || (ww4alt < 1175 && ww4alt > 959)) {
+		if (ww4alt < 915 || (ww4alt < 1175 && ww4alt > 959)) {
             if(!tabCol) {
                 colTable();
                 tabCol = 1;
