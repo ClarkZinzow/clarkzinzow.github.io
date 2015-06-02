@@ -308,7 +308,7 @@ $(document).ready(function(){
 		else if (ww4 > 959){
 			$('.link-holder').css('display','block')			
 		}
-		 if (ww4 < 740) {
+		if (ww4 < 740 || (ww4 < 1175 && ww4 > 959)) {
             if(!tabCol) {
                 colTable();
                 tabCol = 1;
