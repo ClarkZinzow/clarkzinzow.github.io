@@ -302,13 +302,14 @@ $(document).ready(function(){
     }
 	$(window).resize(function(){
 		var ww4 = $(window).width();
+		var ww4alt = viewport().width;
 		if( ww4 < 959){
 			$('.link-holder').css('display','none')		
 		}
 		else if (ww4 > 959){
 			$('.link-holder').css('display','block')			
 		}
-		if (ww4 < 740 || (ww4 < 1175 && ww4 > 959)) {
+		if (ww4 < 740 || (ww4alt < 1175 && ww4alt > 959)) {
             if(!tabCol) {
                 colTable();
                 tabCol = 1;
@@ -320,6 +321,15 @@ $(document).ready(function(){
             }
         }
 	});
+
+	function viewport() {
+		var e = window, a = 'inner';
+		if(!('innerWidth' in window)) {
+			a = 'client';
+			e = document.documentElement || document.body;
+		}
+		return { width : e[a+'Width'], height : e[a+'Height']};
+	}
     
     function colTable() {
         $('.classes-taken').unwrap();
