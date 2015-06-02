@@ -296,14 +296,16 @@ $(document).ready(function(){
 });
 	var tabCol = 0;
 
-    if ($(window).width() < 740) {
+	var ww4load = viewport().width;
+
+    if (ww4load < 915 || (ww4load < 1175 && ww4load > 959)) {
         colTable();
         tabCol = 1;
     }
 	$(window).resize(function(){
 		var ww4 = $(window).width();
 		var ww4alt = viewport().width;
-		if( ww4alt < 959){
+		if(ww4alt < 959){
 			$('.link-holder').css('display','none')		
 		}
 		else if (ww4alt > 959){

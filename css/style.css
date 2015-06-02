@@ -2538,6 +2538,15 @@ Smartphone / small tablet
 	margin-left:0;
 }
 }
+
+@media only screen and (max-width: 440px) {
+	.view-skills a {
+		float: left;
+	}
+	.about-button {
+		margin: 5px;
+	}
+}
 /* ====================
 Retina 
 --------------------------------------------------------------*/
