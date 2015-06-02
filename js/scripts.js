@@ -309,7 +309,7 @@ $(document).ready(function(){
 		else if (ww4 > 959){
 			$('.link-holder').css('display','block')			
 		}
-		if (ww4 < 740 || (ww4alt < 1175 && ww4alt > 959)) {
+		if (ww4 < 915 || (ww4alt < 1175 && ww4alt > 959)) {
             if(!tabCol) {
                 colTable();
                 tabCol = 1;
