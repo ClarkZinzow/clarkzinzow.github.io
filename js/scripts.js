@@ -327,7 +327,7 @@ $(document).ready(function(){
     }
     
     function rowTable() {
-        $('.classes-taken').wrap('<td></td>').attr("class", "table-container-cell").parent().wrapAll('<table><tbody><tr></tr></tbody></table>').parent().parent().parent().attr("class", "table-container-table");
+        $('.classes-taken').wrap('<td></td>').parent().wrapAll('<table><tbody><tr></tr></tbody></table>').parent().parent().parent().attr("class", "table-container-table");
     }
 // Contact submit  ----------------------------------------
 
