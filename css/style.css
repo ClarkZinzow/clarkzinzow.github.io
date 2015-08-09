@@ -958,17 +958,6 @@ Resume
 .resume-line{
 	width:1px;
 	height:100%;
-	position:absolute;
-	top:0;
-	left:9.836363636364%;
-	background:#fff;
-}
-.resume-line-horizontal {
-	width:1px;
-	height:100%;
-	position:absolute;
-	top:0;
-	left:9.836363636364%;
 	background:#fff;
 }
 .resume-date {
