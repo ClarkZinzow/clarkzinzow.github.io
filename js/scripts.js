@@ -7,7 +7,7 @@
 		$('#main').animate({"opacity":'1'},{queue:false,duration:700,easing:"easeInOutQuad"});			
 		$('h1.animtext').textillate({ in: { effect: 'flipInX',delayScale: 2.5  } });
 		setTimeout( function(){		
-			$('.fade').animate({"opacity":'1'},{queue:false,duration:1000,easing:"easeOutQuad"});
+			$('.fade').animate({"opacity":'1'},{queue:false,duration:1000,easing:"easeOutCubic"});
 		},2200);
 	});
 
