@@ -20,10 +20,59 @@ function initChulan() {
 	
 // counter ------------------
 
-	function number(num, content, target, duration) {
+	/**
+	* Duration scaled with individual scaling factor; 
+	* increment value scaled with individual scaling factor.
+	*
+	* Net effect:
+	* duration = (1/scaler) * (scaler * duration / num) * num =
+	* (1/scaler) * speed * num = s
+	* 
+	*
+	*/
+
+	function number(num, content, target, duration, scaler) {
 		if (duration) {
 			var count    = 0;
-			var speed    = parseInt(duration / num);
+			var speed    = Math.round(scaler * parseFloat(duration / num));
+			var interval = setInterval(function(){
+				if(count - 1 < num) {
+					target.html(count);
+				}
+				else {
+					target.html(content);
+					clearInterval(interval);
+				}
+				count += scaler > 1 ? Math.floor(Math.random() * (2 * scaler - 1)) + 1 : 1;
+			}, speed);
+		} 
+		else {
+			target.html(content);
+		}
+	}
+    function stats(duration) {
+    	var MIN_TIMEOUT_DELAY = 4;
+    	var maxNum = Math.floor(duration / MIN_TIMEOUT_DELAY);
+    	$('.stats .num').each(function() {
+    		var container = $(this);
+    		var num = container.attr('data-num');
+    		var content = container.attr('data-content');
+    		number(num, content, container, duration, num > maxNum ? num / maxNum : 1);
+    	});
+	}
+
+	/**
+	* Duration scaled by universal minimum scaling factor;
+	* increment value held constant.
+	*
+	*/
+
+	/*
+
+	function number(num, content, target, duration, scaler) {
+		if (duration) {
+			var count    = 0;
+			var speed    = Math.round(parseFloat(scaler * (duration / num)));
 			var interval = setInterval(function(){
 				if(count - 1 < num) {
 					target.html(count);
@@ -40,13 +89,29 @@ function initChulan() {
 		}
 	}
     function stats(duration) {
-		$('.stats .num').each(function() {
+    	var scaler = 1;
+    	var MIN_TIMEOUT_DELAY = 4;
+    	var maxNum = Math.floor(duration / MIN_TIMEOUT_DELAY);
+    	var tempScaler;
+    	$('.stats .num').each(function() {
+    		var container = $(this);
+    		var num = container.attr('data-num');
+    		if(num > maxNum) {
+				tempScaler = num / maxNum;
+				if(scaler < tempScaler) {
+					scaler = tempScaler;
+				}
+    		}
+    	});
+    	$('.stats .num').each(function() {
 			var container = $(this);
 			var num = container.attr('data-num');
 			var content  = container.attr('data-content');
-			number(num, content, container, duration);
+			number(num, content, container, duration, scaler);
         });
-	}		
+	}	
+
+	*/
 	
 // Scroll animation   ----------------------------------------
 	
