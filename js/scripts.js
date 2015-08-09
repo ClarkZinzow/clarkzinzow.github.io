@@ -90,7 +90,7 @@ function initChulan() {
 
     var $i = 1;
 	$(document.body).on('appear', '.stats', function(e) {
-		if ($i === 1) { stats(1500); }
+		if ($i === 1) { stats(2600); }
 		$i++;
 		$('.num').removeClass('scale-small');
 	});	
