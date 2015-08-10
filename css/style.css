@@ -138,6 +138,12 @@ Content Styles
 	width:100%;
 	height:auto
 }
+#project-slider .respimg {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 .content-holder{
 	height:100%; 
 	margin-left:17%;
@@ -2590,4 +2596,9 @@ User added
 }
 .classes-taken th.last {
   border-right: none;
+}
+
+ul.project-list {
+	list-style-type: circle;
+	list-style-position: inside;
 }

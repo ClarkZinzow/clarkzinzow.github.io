@@ -23,12 +23,6 @@ function initChulan() {
 	/**
 	* Duration scaled with individual scaling factor; 
 	* increment value scaled with individual scaling factor.
-	*
-	* Net effect:
-	* duration = (1/scaler) * (scaler * duration / num) * num =
-	* (1/scaler) * speed * num = s
-	* 
-	*
 	*/
 
 	function number(num, content, target, duration, scaler) {
@@ -36,7 +30,7 @@ function initChulan() {
 			var count    = 0;
 			var speed    = Math.round(scaler * parseFloat(duration / num));
 			var interval = setInterval(function(){
-				if(count - 1 < num) {
+				if(count - (2 * scaler - 1) < num) {
 					target.html(count);
 				}
 				else {
@@ -219,12 +213,13 @@ function initChulan() {
 				$("#project-slider").owlCarousel({
 					navigation : true,
 					pagination:true, 
-					slideSpeed : 300,
+					slideSpeed : 200,
 					paginationSpeed : 400,
-					singleItem:true,
-					transitionStyle : "backSlide"				
+					singleItem: true,
+					transitionStyle : "backSlide",
+					autoHeight: true
 				 });
-				 $('.white-popup-block h2').textillate({in:{effect:'flipInX',delayScale: 3.5}});
+				 $('.white-popup-block h2').textillate({in:{effect:'flipInX',delayScale: 2.5}});
 				 
 			}
 		}
