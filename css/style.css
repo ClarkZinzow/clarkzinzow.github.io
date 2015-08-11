@@ -964,6 +964,9 @@ Resume
 .resume-line{
 	width:1px;
 	height:100%;
+	position:absolute;
+	top:0;
+	left:9.836363636364%;
 	background:#fff;
 }
 .resume-date {
@@ -1182,7 +1185,7 @@ Work
 	box-shadow: -10px -10px 0 1px rgba(255,255,255,0.6);
 }
 .folio-overlay h3{
-	margin-top:30%;
+	margin-top:15%;
 	color:#fff;
 	font-weight:600;
 	text-transform:none;
@@ -2485,7 +2488,7 @@ Tablet / netbooks
 	width: 46.969696969697%;
 }
 .folio-overlay h3{
-	margin-top:30%;
+	margin-top:15%;
 }
 }
 
@@ -2601,4 +2604,14 @@ User added
 ul.project-list {
 	list-style-type: circle;
 	list-style-position: inside;
+	font-size: 0.9em;
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	vertical-align: baseline;
+}
+
+.projects-contact-link {
+	width: 100%;
+	margin-top: 0px;
 }

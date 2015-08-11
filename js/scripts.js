@@ -198,6 +198,18 @@ function initChulan() {
 	
 // MagnificPopup  ----------------------------------------	
 
+	$('body').on("click", ".button.close-and-scroll", function(event) {
+		event.preventDefault();
+		var scrollHref = $(event.target).attr('href');
+		$.magnificPopup.close();
+		setTimeout(function() {
+			$.scrollTo( scrollHref,950,{easing:'swing',offset: 0,'axis':'y'} );
+			setTimeout(function() {
+				// spin the wheels
+			}, 900);
+		}, 800);
+	})
+
 	$('.popup-with-move-anim').magnificPopup({
 		type: 'ajax',
 		alignTop: true,
@@ -209,6 +221,30 @@ function initChulan() {
 		removalDelay: 600,
 		mainClass: 'my-mfp-slide-bottom',         
 		callbacks: {
+			/*
+			open: function() {
+
+				$(".button.close-and-scroll").bind( 'click', function(event) {
+					event.preventDefault();
+					var scrollHref = $(this).attr('href');
+					$(".mfp-bg").click();
+					var func = function(time) {
+						function recurs() {
+							if($.magnificPopup.instance.isOpen || ) {
+								$(".mfp-bg").click();
+								setTimeout(recurs, time);
+							}
+							return;
+						}
+						return recurs;
+					};
+					setTimeout(function() {
+						func(800)();
+						$.scrollTo( scrollHref,950,{easing:'swing',offset: 0,'axis':'y'} );
+					}, 900);	
+				});
+			},
+			*/
 			ajaxContentAdded: function() {
 				$("#project-slider").owlCarousel({
 					navigation : true,
@@ -303,7 +339,7 @@ function initChulan() {
 		$.scrollTo( 
 			$(this).attr('href'),950,{easing:'swing',offset: 0,'axis':'y'} );
 			setTimeout( function(){	
-			hidemenu();				 	
+			//hidemenu();				 	
 		},900);	
 	});
 
