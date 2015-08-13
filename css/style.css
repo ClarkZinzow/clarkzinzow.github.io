@@ -1215,7 +1215,7 @@ Work
 }
 .white-popup-block div.content{
 	background:#fff;
-	padding-bottom:90px;
+	padding-bottom:50px;
 }
 .slider-content{
 	position:relative;
@@ -2601,7 +2601,7 @@ User added
   border-right: none;
 }
 
-ul.project-list {
+.project-list {
 	list-style-type: circle;
 	list-style-position: inside;
 	font-size: 0.9em;
@@ -2611,11 +2611,20 @@ ul.project-list {
 	vertical-align: baseline;
 }
 
+ul.project-list ul {
+	font-size: 1em;
+}
+
+ul.project-list ul > li {
+	margin-left: 30px;
+}
+
 .projects-contact-link {
 	width: 100%;
 	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-.white-popup-block .container a {
+.white-popup-block .container a:not(.button) {
 	color: rgba(84, 186, 187, 0.8);
 }
