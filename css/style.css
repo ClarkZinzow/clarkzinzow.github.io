@@ -2615,3 +2615,7 @@ ul.project-list {
 	width: 100%;
 	margin-top: 0px;
 }
+
+.white-popup-block .container a {
+	color: rgba(84, 186, 187, 0.8);
+}

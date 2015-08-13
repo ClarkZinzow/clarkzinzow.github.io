@@ -208,7 +208,16 @@ function initChulan() {
 				// spin the wheels
 			}, 900);
 		}, 800);
-	})
+	});
+
+	jQuery.cachedScript = function(url, options) {
+		options = $.extend(options || {}, {
+			dataType: "script",
+			cache: true,
+			url: url
+		});
+		return jQuery.ajax(options);
+	};
 
 	$('.popup-with-move-anim').magnificPopup({
 		type: 'ajax',
@@ -221,30 +230,28 @@ function initChulan() {
 		removalDelay: 600,
 		mainClass: 'my-mfp-slide-bottom',         
 		callbacks: {
-			/*
 			open: function() {
-
-				$(".button.close-and-scroll").bind( 'click', function(event) {
-					event.preventDefault();
-					var scrollHref = $(this).attr('href');
-					$(".mfp-bg").click();
-					var func = function(time) {
-						function recurs() {
-							if($.magnificPopup.instance.isOpen || ) {
-								$(".mfp-bg").click();
-								setTimeout(recurs, time);
-							}
-							return;
-						}
-						return recurs;
-					};
-					setTimeout(function() {
-						func(800)();
-						$.scrollTo( scrollHref,950,{easing:'swing',offset: 0,'axis':'y'} );
-					}, 900);	
+				window.MathJax = {
+				    tex2jax: {
+				      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+				      processEscapes: true
+				    }
+				  };
+				$.cachedScript("https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML").done(function() {
+				}).fail(function(jqXHR, textStatus, errorThrown) {
+					console.log(textStatus + "; " + errorThrown);
 				});
+				$.cachedScript("/js/bigfoot.min.js").done(function() {
+					$.bigfoot({
+						scope: ".mfp-content",
+						//hoverDelay: 300,
+						activateOnHover: true,
+						deleteOnUnhover: true
+					});
+				}).fail(function(jqXHR, textStatus, errorThrown) {
+					console.log(textStatus + "; " + errorThrown);
+				})
 			},
-			*/
 			ajaxContentAdded: function() {
 				$("#project-slider").owlCarousel({
 					navigation : true,
@@ -314,7 +321,7 @@ function initChulan() {
 		slideSpeed : 300,
 		paginationSpeed : 400,
 		singleItem:true,
-		transitionStyle : "goDown"
+		transitionStyle : "backSlide"
 	});	
 	
 	$("#single-media").owlCarousel({
