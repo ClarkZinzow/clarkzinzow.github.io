@@ -349,10 +349,10 @@ function initChulan() {
      });	
 // Navigation + custoum  scripts----------------------------------------
 		
-	$('#options li').click(function(){
+	/*$('#options li').click(function(){
 		$('#options li').removeClass('actcat');
 		$(this).addClass('actcat');
-	});
+	});*/
 	
 	$('.nav-button').click(function(){
 		$('.link-holder').slideToggle(500);	
@@ -399,7 +399,7 @@ function initChulan() {
 	
 // Mixitup  ----------------------------------------
 	
-	$('#folio_container').mixitup({
+	/*$('#folio_container').mixitup({
 		targetSelector: '.box',
 		effects: ['fade','rotateX'],
 		easing: 'snap',
@@ -407,6 +407,19 @@ function initChulan() {
 		layoutMode: 'grid',
     	targetDisplayGrid: 'inline-block',
     	targetDisplayList: 'block',
+	});*/
+
+	$('#folio_container').mixItUp({
+		animation: {
+/*			enable: false,*/
+			effects: 'fade rotateX',
+			duration: 700,
+			easing: 'ease',
+			animateResizeContainer: false
+		},
+		load: {
+			sort: 'order:asc'
+		}
 	});
 			
 };
@@ -505,7 +518,7 @@ $(document).ready(function(){
 	
 	// coordinates   --------
 	
-	var UWMadison = new google.maps.LatLng(43.073234, -89.390774);	
+	var UWMadison = new google.maps.LatLng(43.071623, -89.391290);	
 	function initialize() {	
 	   var styles = [
     {
@@ -602,7 +615,7 @@ $(document).ready(function(){
 	
 	// marker coordinates   --------
 	
-	var companyPos = new google.maps.LatLng(43.073234, -89.390774);
+	var companyPos = new google.maps.LatLng(43.071623, -89.391290);
 	var companyMarker = new google.maps.Marker({
 		position: companyPos,
 		map: map,
@@ -643,10 +656,10 @@ $(document).ready(function(){
 		$('.parallax-facts').parallax("70%", 0.3);
 		$('.parallax-testimonials').parallax("70%", 0.3);
 		$('.box').hover(function(){
-			$(this).find('div.folio-overlay').stop(true,true).animate({opacity:'0.9',left:'10px' , top:'10px'},{queue:true,duration:500,easing:"swing"});
+			$(this).find('div.folio-overlay').stop(true,true).animate({opacity:'0.9', left:'10px', top:'10px'}, {queue:true, duration:500, easing:"swing"});
 			$(this).find('div.folio-button').addClass('scale-big');	
 				},function(){
-			$(this).find('div.folio-overlay').stop(true,true).animate({opacity:'0',left:'0' , top:'0'},{queue:true,duration:500,easing:"easeInOutBack"});
+			$(this).find('div.folio-overlay').stop(true,true).animate({opacity:'0', left:'0', top:'0'}, {queue:true, duration:500, easing:"easeInOutBack"});
 			$(this).find('div.folio-button').removeClass('scale-big');
 		});	
 

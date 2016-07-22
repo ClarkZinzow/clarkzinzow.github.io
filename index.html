@@ -164,7 +164,7 @@
 						<h3>Clark Zinzow</h3>
 						<h3 class="margin">Aspiring Researcher, Software Engineer, &amp; Freelance Web Developer</h3>
 						<p>
-						I'm a recent graduate of University of Wisconsin - Madison with a degree in Mathematics and Computer Science.  I have an avid interest in taking on challenging projects - whether it be in a research, entrepreneurial, or recreational capacity.
+						I'm a recent graduate of University of Wisconsin - Madison with a degree in Mathematics and Computer Science.  I have an avid interest in taking on challenging projects - whether it be in a research, entrepreneurial, professional, or recreational capacity.
 						</p>
 
 						<div class="about-accordion">
@@ -183,7 +183,7 @@
 								<p>
 									My current research interests include: <br>
 								</p>
-									<ul style="list-style-type: circle; list-style-position: inside; text-align: left;">
+									<ul style="list-style-type: circle; list-style-position: inside; text-align: left; font-size: 0.9rem;">
 										<li>Applications of deep learning to autonomous driving systems</li>
 										<li>Topological data analysis</li>
 										<li>The quest for scene understanding</li>
@@ -747,14 +747,15 @@
 						
 						<!-- portfolio filters -->
 						
-						<div id="options" class="clear">
+						<div id="options">
 	
-						  <ul id="filters" class="option-set" data-option-key="filter">
+						  <ul id="filters">
 						  
-							<li class="filter actcat transition" data-filter="all">All</li>
-							<li class="filter transition" data-filter="category_1">Web</li>
-							<li class="filter transition" data-filter="category_2">Apps</li>
-							<li class="filter transition" data-filter="category_3">Research</li>
+							<li class="filter" data-filter="all">All</li>
+							<li class="filter" data-filter=".category-1">Web</li>
+							<li class="filter" data-filter=".category-2">Apps</li>
+							<li class="filter" data-filter=".category-3">Projects</li>
+							<li class="filter" data-filter=".category-4">Research</li>
 							
 						  </ul>
 						  
@@ -764,17 +765,17 @@
 				
 						<div id="folio_container">
 						
-							<!-- 1 project ajax page-->
+							<!-- 1 project ajax page -->
 
-							<div class="box grid-2  mix category_3 mix_all">
+							<div class="box mix category-4" data-order="1">
 							
-								 <a href="projects-pages/folio-modifiednimgame.html" class="popup-with-move-anim">
+								 <a href="projects-pages/folio-tda.html" class="popup-with-move-anim">
 									 <div class="folio-img-holder">
-										<img src="images/folio/thumbs/pileofstones.jpg" class="respimg" alt="" title="">
+										<img src="images/folio/thumbs/tda.png" class="respimg" alt="" title="">
 										<div class="folio-overlay">
-											<h3>Modified Nim Game Research</h3>
-											<h5>Mathematics Research</h5>
-											<div class="folio-button"><i class="fa fa-mobile"></i></div>
+											<h3>Topological Data Analysis</h3>
+											<h5>Machine Learning Research</h5>
+											<div class="folio-button"><i class="fa fa-book"></i></div>
 										</div>
 									</div>
 									
@@ -782,9 +783,81 @@
 									
 							</div>
 
-							<!-- 2 project ajax page-->	
-						
-							<div class="box grid-2   mix category_3 mix_all">
+							<!-- 2 project ajax page -->
+
+							<div class="box mix category-3" data-order="8">
+							
+								 <a href="projects-pages/folio-nonlinearoptalg.html" class="popup-with-move-anim">
+									 <div class="folio-img-holder">
+										<img src="images/folio/thumbs/nonlinearoptalg.gif" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>Nonlinear Optimization Algorithms</h3>
+											<h5>Optimization/Algorithms Project</h5>
+											<div class="folio-button"><i class="fa fa-code"></i></div>
+										</div>
+									</div>
+									
+								</a>
+									
+							</div>
+							
+							<!-- 3 project ajax page -->
+
+							<div class="box mix category-3" data-order="14">
+							
+								 <a href="projects-pages/folio-bigsolutionmanual.html" class="popup-with-move-anim">
+									 <div class="folio-img-holder">
+										<img src="images/folio/thumbs/bigrudin.jpg" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>Big Solution Manual</h3>
+											<h5>Mathematics/CS Project</h5>
+											<div class="folio-button"><i class="fa fa-book"></i></div>
+										</div>
+									</div>
+									
+								</a>
+									
+							</div>
+							
+							<!-- 4 project ajax page -->
+
+							<div class="box mix category-3" data-order="2">
+							
+								 <a href="projects-pages/folio-mlalgs.html" class="popup-with-move-anim">
+									 <div class="folio-img-holder">
+										<img src="images/folio/thumbs/mlalgs.gif" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>Machine Learning/Signal Processing Algorithms</h3>
+											<h5>Machine Learning Project</h5>
+											<div class="folio-button"><i class="fa fa-code"></i></div>
+										</div>
+									</div>
+									
+								</a>
+									
+							</div>
+							
+							<!-- 5 project ajax page -->
+
+							<div class="box mix category-3" data-order="9">
+							
+								 <a href="projects-pages/folio-cvapps.html" class="popup-with-move-anim">
+									 <div class="folio-img-holder">
+										<img src="images/folio/thumbs/cvapps.jpg" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>Computer Vision Applications</h3>
+											<h5>Computer Vision Project</h5>
+											<div class="folio-button"><i class="fa fa-code"></i></div>
+										</div>
+									</div>
+									
+								</a>
+									
+							</div>
+							
+							<!-- 6 project ajax page -->
+
+							<div class="box mix category-4" data-order="15">
 
 								<a href="projects-pages/folio-spectraltheory.html" class="popup-with-move-anim">
 							
@@ -803,18 +876,36 @@
 								
 							</div>
 							
-							<!-- 3 project ajax page-->
+							<!-- 7 project ajax page-->
 
-							<div class="box grid-2  mix category_3 mix_all">
+							<div class="box mix category-3" data-order="3">
 
-								<a href="projects-pages/folio-smoothedanalysis.html" class="popup-with-move-anim">
-							
-								<!--<a href="http://en.wikipedia.org/wiki/Smoothed_analysis" target="_blank">-->
-									<div class="folio-img-holder">
-										<img src="images/folio/thumbs/smoothed.jpg" class="respimg" alt="" title="">
+								<a href="projects-pages/folio-pythonmllib.html" class="popup-with-move-anim">
+								
+									<div class="folio-img-holder">						
+										<img src="images/folio/thumbs/pythonmllib.jpg" class="respimg" alt="" title="">
 										<div class="folio-overlay">
-											<h3>Smoothed Analysis of Algorithms research</h3>
-											<h5>Computer Science research</h5>
+											<h3>Python Machine Learning Library</h3>
+											<h5>Machine Learning Project</h5>
+											<div class="folio-button"><i class="fa fa-code"></i></div>
+										</div>
+									</div>
+									
+								</a>
+								
+							</div>
+							
+							<!-- 8 project ajax page-->
+
+							<div class="box mix category-4" data-order="10">
+
+								<a href="projects-pages/folio-dnnmath.html" class="popup-with-move-anim">
+								
+									<div class="folio-img-holder">						
+										<img src="images/folio/thumbs/dnnmath.png" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>Deep Neural Network Mathematical Framework</h3>
+											<h5>Mathematics/Machine Learning Research</h5>
 											<div class="folio-button"><i class="fa fa-book"></i></div>
 										</div>
 									</div>
@@ -823,9 +914,102 @@
 								
 							</div>
 							
-							<!-- 4 project youtube  video-->
+							<!-- 9 project ajax page-->
+
+							<div class="box mix category-4" data-order="16">
 							
-							<div class="box  grid-2  mix category_2 mix_all">
+								 <a href="projects-pages/folio-modifiednimgame.html" class="popup-with-move-anim">
+									 <div class="folio-img-holder">
+										<img src="images/folio/thumbs/pileofstones.jpg" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>Modified Nim Game Research</h3>
+											<h5>Mathematics Research</h5>
+											<div class="folio-button"><i class="fa fa-book"></i></div>
+										</div>
+									</div>
+									
+								</a>
+									
+							</div>
+
+							<!-- 10 project ajax page -->
+
+							<div class="box mix category-4" data-order="4">
+							
+								 <a href="projects-pages/folio-deepdriving.html" class="popup-with-move-anim">
+									 <div class="folio-img-holder">
+										<img src="images/folio/thumbs/deepdriving.jpg" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>Deep Autonomous Driving</h3>
+											<h5>Machine Learning Research</h5>
+											<div class="folio-button"><i class="fa fa-book"></i></div>
+										</div>
+									</div>
+									
+								</a>
+									
+							</div>
+
+							<!-- 11 project ajax page -->
+
+							<div class="box mix category-4" data-order="11">
+							
+								<a href="projects-pages/folio-qml.html" class="popup-with-move-anim">
+								
+									<div class="folio-img-holder">
+										<img src="images/folio/thumbs/comingsoon.jpg" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>Quantum Machine Learning</h3>
+											<h5>Machine Learning Research</h5>
+											<div class="folio-button"><i class="fa fa-book"></i></div>
+										</div>
+									</div>
+									
+								</a>
+									
+							</div>
+
+							<!-- 12 project ajax page -->
+
+							<div class="box mix category-3" data-order="17">
+							
+								<a href="projects-pages/folio-cppalglib.html" class="popup-with-move-anim">
+								
+									<div class="folio-img-holder">
+										<img src="images/folio/thumbs/comingsoon.jpg" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>C++ Algorithms Library</h3>
+											<h5>Algorithms Project</h5>
+											<div class="folio-button"><i class="fa fa-book"></i></div>
+										</div>
+									</div>
+									
+								</a>
+									
+							</div>
+
+							<!-- 13 project ajax page -->
+
+							<div class="box mix category-2" data-order="5">
+							
+								<a href="projects-pages/folio-votecalc.html" class="popup-with-move-anim">
+								
+									<div class="folio-img-holder">
+										<img src="images/folio/thumbs/votecalc.png" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>Vote Calculator</h3>
+											<h5>Web App</h5>
+											<div class="folio-button"><i class="fa fa-laptop"></i></div>
+										</div>
+									</div>
+									
+								</a>
+								
+							</div>
+
+							<!-- 14 project ajax page -->
+
+							<div class="box mix category-2" data-order="12">
 							
 								<a href="projects-pages/folio-flexy.html" class="popup-with-move-anim">
 								
@@ -841,10 +1025,10 @@
 								</a>
 								
 							</div>
-							
-							<!-- 5 project vimeo video-->	
 
-							<div class="box grid-2  mix category_2 mix_all">
+							<!-- 15 project ajax page -->
+
+							<div class="box mix category-2" data-order="18">
 							
 								<a href="projects-pages/folio-meetsnap.html" class="popup-with-move-anim">
 								
@@ -860,10 +1044,49 @@
 								</a>	
 								
 							</div>
+
+							<!-- 16 project ajax page -->
+
+							<div class="box mix category-3" data-order="6">
 							
-							<!-- 6 project single image-->
+								<a href="projects-pages/folio-blog.html" class="popup-with-move-anim">
+								
+									<div class="folio-img-holder">
+										<img src="images/folio/thumbs/comingsoon.jpg" class="respimg" alt="" title="">								
+										<div class="folio-overlay">
+											<h3>Math/CS blog</h3>
+											<h5>Math/CS Project</h5>
+											<div class="folio-button"><i class="fa fa-mobile"></i></div>
+										</div>							
+									</div>
+									
+								</a>	
+								
+							</div>
+
+							<!-- 17 project ajax page -->
+
+							<div class="box mix category-4" data-order="13">
+
+								<a href="projects-pages/folio-smoothedanalysis.html" class="popup-with-move-anim">
 							
-							<div class="box grid-2  mix category_1 mix_all">
+								<!--<a href="http://en.wikipedia.org/wiki/Smoothed_analysis" target="_blank">-->
+									<div class="folio-img-holder">
+										<img src="images/folio/thumbs/smoothed.jpg" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+											<h3>Smoothed Analysis of Algorithms research</h3>
+											<h5>Algorithms research</h5>
+											<div class="folio-button"><i class="fa fa-book"></i></div>
+										</div>
+									</div>
+									
+								</a>
+								
+							</div>
+
+							<!-- 18 project ajax page -->
+
+							<div class="box mix category-1" data-order="7">
 							
 								<a href="projects-pages/folio-explorewho.html" class="popup-with-move-anim">
 								
@@ -879,48 +1102,27 @@
 								</a>
 									
 							</div>
-							
-							<!-- 7 project gallery-->
 
-							<div class="box grid-2   mix category_1 mix_all activefol">
+							<!-- 19 project ajax page -->
+
+							<div class="box mix category-1" data-order="19">
 							
-								<a href="http://wgnhs.uwex.edu" target="_blank">
-								
-									<div class="folio-img-holder">
-										<img src="images/folio/thumbs/wgnhs.png" class="respimg" alt="" title="">
-										<div class="folio-overlay">
-										<h3>wgnhs.uwex.edu</h3>
-										<h5>Web</h5>
-										<div class="folio-button"><i class="fa fa-laptop"></i></div>
-										</div>
-									</div>
-									
-								</a>
-								
-							</div>
-							
-							<!-- 8 project gallery-->
-							
-							<div class="box grid-2  mix category_3 mix_all">
-							
-								<a href="projects-pages/folio-quantummachinelearning.html" class="popup-with-move-anim">
+								<a href="projects-pages/folio-benefitconcepts.html" class="popup-with-move-anim">
 								
 									<div class="folio-img-holder">
 										<img src="images/folio/thumbs/comingsoon.jpg" class="respimg" alt="" title="">
 										<div class="folio-overlay">
-											<h3>Quantum Machine Learning</h3>
-											<h5>Mathematics Research</h5>
-											<div class="folio-button"><i class="fa fa-book"></i></div>
+											<h3>Benefit Concepts</h3>
+											<h5>Web</h5>
+											<div class="folio-button"><i class="fa fa-laptop"></i></div>
 										</div>
 									</div>
 									
 								</a>
 									
 							</div>
-							
-							<!-- 9 project gallery-->
-						
-							<div class="box grid-2   mix category_3 mix_all">
+
+							<!-- <div class="box mix category-3" data-order="19">
 							
 								<a href="projects-pages/folio-quantumdomaintheory.html" class="popup-with-move-anim">
 								
@@ -935,7 +1137,24 @@
 									
 								</a>
 								
-							</div>
+							</div> -->
+
+							<!-- <div class="box mix category-1" data-order="20">
+							
+								<a href="http://wgnhs.uwex.edu" target="_blank">
+								
+									<div class="folio-img-holder">
+										<img src="images/folio/thumbs/wgnhs.png" class="respimg" alt="" title="">
+										<div class="folio-overlay">
+										<h3>wgnhs.uwex.edu</h3>
+										<h5>Web</h5>
+										<div class="folio-button"><i class="fa fa-laptop"></i></div>
+										</div>
+									</div>
+									
+								</a>
+								
+							</div> -->
 											
 						</div>
 						
@@ -1015,8 +1234,8 @@
 									<p>My mathematics background has allowed me to heavily dive into the theoretical area of Computer Science, and so far algorithm analysis, computational complexity, and machine learning are the three research areas that interest me the most.  I am currently doing independent research in several areas of machine learning.  Please contact me if you want to learn more about my research, or if you wish to discuss your own!</p>
 									<h5>Research Areas</h5>
 									<ul>
-										<li>Algorithm Analysis</li>
 										<li>Machine Learning</li>
+										<li>Algorithm Design and Analysis</li>
 										<li>Computational Complexity</li>
 									</ul>
 									<div class="clear"></div>
@@ -1103,7 +1322,7 @@
 		<div id="order" class="sections">
 		
 			<div class="content">
-				<a href="#contact_form" class="button transition scroll-link">Get in touch</a>
+				<a href="#contacts" class="button transition scroll-link">Get in touch</a>
 			</div>
 			
 			<div class="ordershadow"></div>
@@ -1277,7 +1496,7 @@
 	<script type="text/javascript" src="js/jpreloader.min.js"></script>
 	<script type="text/javascript" src="js/smoothscroll.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
-	<script type="text/javascript" src="js/mixitup.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 	<script type="text/javascript" src="js/appear.js"></script>
 	<script type="text/javascript" src="js/jquery.nav.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
