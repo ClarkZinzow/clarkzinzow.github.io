@@ -1090,7 +1090,7 @@ Work
 	transform: rotate(-3deg);
 	opacity:0.5;
 }
-#folio_container{
+#folio_container {
 	position:relative;
 	z-index:3;
 	float:left;
@@ -1101,6 +1101,7 @@ Work
 	column-count: 3;
 	-webkit-transform: translate3d(0,0,0);
 }
+
 #folio_container .mix { 
 	display: none;
 	margin-bottom: 3%;
@@ -2509,6 +2510,15 @@ Tablet / netbooks
 .box {
 	width: 46.969696969697%;
 }
+#folio_container .box {
+	width: 96.969696969697%;
+}
+#folio_container {
+	max-height: 3400px;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
 .folio-overlay h3{
 	margin-top:15%;
 }
@@ -2560,6 +2570,12 @@ Smartphone / small tablet
 }
 #contact_form input{
 	width:100%;
+}
+#folio_container {
+	max-height: 8000px;
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
 }
 #project-slider .owl-next ,#project-slider .owl-prev {display:none}
 #respond{
