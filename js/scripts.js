@@ -421,6 +421,12 @@ function initChulan() {
 			sort: 'order:asc'
 		}
 	});
+
+	// Accordion
+
+	$('.accordion').accordion({
+		"transitionSpeed": 500
+	});
 			
 };
 

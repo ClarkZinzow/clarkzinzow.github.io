@@ -485,10 +485,10 @@ About
 }
 #about p {
 	text-align:left;
-	margin-bottom: 3%;
+	-webkit-font-smoothing: antialiased;
+	/*margin-bottom: 3%;*/
 }
 #about h3 {
-	text-align:left;
 	margin-bottom: 3%;
 }
 #about h2.margin {
