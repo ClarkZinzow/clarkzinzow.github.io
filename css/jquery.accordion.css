@@ -42,7 +42,7 @@
 }
 
 [data-accordion]:last-child [data-control] {
-    border-bottom: none;
+    /* border-bottom: none; */
 }
 
 [data-accordion] [data-content] {

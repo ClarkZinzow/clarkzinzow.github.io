@@ -38,7 +38,6 @@
         var closedCSS = { 'max-height': 0, 'overflow': 'hidden' };
 
         var CSStransitions = supportsTransitions();
-        var transitionEvent = whichTransitionEvent();
 
         function debounce(func, threshold, execAsap) {
             var timeout;
@@ -79,23 +78,6 @@
             }
 
             return false;
-        }
-
-        function whichTransitionEvent() {
-            var t;
-            var el = document.createElement('fakeelement');
-            var transitions = {
-              'transition'      : 'transitionend',
-              'OTransition'     : 'oTransitionEnd',
-              'MozTransition'   : 'transitionend',
-              'WebkitTransition': 'webkitTransitionEnd'
-            }
-
-            for(t in transitions){
-                if( el.style[t] !== undefined ){
-                    return transitions[t];
-                }
-            }
         }
 
         function requestAnimFrame(cb) {
@@ -177,7 +159,7 @@
 
         function closeAccordion($accordion, $content) {
             $accordion.trigger('accordion.close');
-
+            
             if(CSStransitions) {
                 if(accordionHasParent) {
                     var $parentAccordions = $accordion.parents('[data-accordion]');
@@ -187,26 +169,11 @@
 
                 $content.css(closedCSS);
 
-                // custom addition
-                $content.one(transitionEvent, function(e) {
-                    $content.css('visibility', 'hidden');
-                    if($accordion.is(":last-child")) {
-                        $accordion.find('> ' + opts.controlElement).css('border-bottom', 'none');
-                    }
-                 });
-                    
-
                 $accordion.removeClass('open');
             } else {
                 $content.css('max-height', $content.data('oHeight'));
 
-                // callback custom addition
-                $content.animate(closedCSS, opts.transitionSpeed, function() {
-                    $content.css('visibility', 'hidden');
-                    if($accordion.is(":last-child")) {
-                        $accordion.find('> ' + opts.controlElement).css('border-bottom', 'none');
-                    }
-                });
+                $content.animate(closedCSS, opts.transitionSpeed);
 
                 $accordion.removeClass('open');
             }
@@ -214,12 +181,6 @@
 
         function openAccordion($accordion, $content) {
             $accordion.trigger('accordion.open');
-
-            $content.css('visibility', 'visible');  // Custom addition.
-            if($accordion.is(":last-child")) {
-                $accordion.find('> ' + opts.controlElement).css('border-bottom', '1px solid #ddd');
-            }
-
             if(CSStransitions) {
                 toggleTransition($content);
 
@@ -289,6 +250,10 @@
                 
                 toggleAccordion();
             });
+            
+            $controls.on('accordion.refresh', function() {
+                refreshHeight($accordion);
+            });
 
             $(window).on('resize', debounce(function() {
                 refreshHeight($accordion);
@@ -298,8 +263,6 @@
         function setup() {
             $content.each(function() {
                 var $curr = $(this);
-
-                $curr.css('visibility', 'hidden');
 
                 if($curr.css('max-height') != 0) {
                     if(!$curr.closest('[data-accordion]').hasClass('open')) {
@@ -312,6 +275,7 @@
                     }
                 }
             });
+
 
             if(!$accordion.attr('data-accordion')) {
                 $accordion.attr('data-accordion', '');
