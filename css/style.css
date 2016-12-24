@@ -1099,7 +1099,7 @@ Work
 	z-index:3;
 	float:left;
 	width:100%;
-	max-height: 5000px;
+	max-height: 6000px;
 	-webkit-column-count: 3;
 	-moz-column-count: 3;
 	column-count: 3;
@@ -1107,7 +1107,7 @@ Work
 }
 
 #folio_container .mix {
-	display: none;
+	/* display: none; */
 	margin-bottom: 3%;
 /*	padding: 4%;*/
 	-webkit-backface-visibility: hidden;
@@ -1125,7 +1125,7 @@ Work
 #options ul {
 	position:relative;
 	margin:10px auto 10px;
-	max-width:350px;
+	max-width:550px;
 	border-radius:6px;
 	padding:8px 0;
 	border-bottom:4px solid #ccc;
@@ -1160,7 +1160,7 @@ Work
 	font-weight:700;
 	position:relative;
 }
-#options li.active, #options li:hover{
+#options li.mixitup-control-active, #options li:hover{
 	color:#666;
 }
 .box {
@@ -1326,7 +1326,7 @@ Services
 	background:#fff;
 	border-radius:10px;
 	padding:8px;
-	width:80%;
+	width:90%;
 	border-bottom:6px solid #ccc;
 }
 .services-decor {
@@ -1344,7 +1344,7 @@ Services
 .services-box-info p{
 	font-size:0.8em;
 	text-align:justify;
-	max-width:250px;
+	max-width:90%;
 	margin:10px auto;
 }
 .services-box-info h5{
@@ -1375,7 +1375,7 @@ Services
 	position: absolute;
 	content: "";
 	bottom: 30px;
-	left: 59px;
+	left: 39px;
 	width: 50%;
 	top: 40%;
 	max-width:200px;
@@ -1397,11 +1397,11 @@ Services
 	-o-transform: rotate(8deg);
 	-ms-transform: rotate(8deg);
 	transform: rotate(8deg);
-	right: 59px;
+	right: 39px;
 	left: auto;
 }
 #services-carusel .item {
-	max-width:350px;
+	/* max-width:350px; */
 	margin:0 auto;
 }
 /* ====================
@@ -2359,6 +2359,13 @@ CSS animation
     -ms-transition: all 400ms linear;
     transition: all 400ms linear;
 }
+#filters .filter {
+	-webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
 .but-rotade{
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
@@ -2518,7 +2525,7 @@ Tablet / netbooks
 	width: 96.969696969697%;
 }
 #folio_container {
-	max-height: 3400px;
+	max-height: 8000px;
 	-webkit-column-count: 2;
 	-moz-column-count: 2;
 	column-count: 2;
@@ -2576,7 +2583,7 @@ Smartphone / small tablet
 	width:100%;
 }
 #folio_container {
-	max-height: 8000px;
+	max-height: 10000px;
 	-webkit-column-count: 1;
 	-moz-column-count: 1;
 	column-count: 1;
@@ -2719,4 +2726,8 @@ ul.project-list ul > li {
 
 #services-carusel .owl-prev, #project-slider .owl-prev, #services-carusel .owl-next, #project-slider .owl-next {
 	top: 100%;
+}
+
+[data-content] > * {
+  overflow: auto;
 }

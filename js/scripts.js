@@ -279,7 +279,7 @@ function initChulan() {
 					transitionStyle : "backSlide",
 					autoHeight: true
 				 });
-				 $('.white-popup-block h2').textillate({in:{effect:'flipInX',delayScale: 2.5}});
+				 $('.white-popup-block h2').textillate({in:{effect:'flipInX',delayScale: 1.5}});
 
 			}
 		}
@@ -399,28 +399,29 @@ function initChulan() {
 
 // Mixitup  ----------------------------------------
 
-	/*$('#folio_container').mixitup({
-		targetSelector: '.box',
-		effects: ['fade','rotateX'],
-		easing: 'snap',
-		transitionSpeed:700,
-		layoutMode: 'grid',
-    	targetDisplayGrid: 'inline-block',
-    	targetDisplayList: 'block',
-	});*/
-
-	$('#folio_container').mixItUp({
+	var mixer = mixitup('#folio_container', {
 		animation: {
-/*			enable: false,*/
-			effects: 'fade rotateX',
-			duration: 700,
-			easing: 'ease',
-			animateResizeContainer: false
-		},
-		load: {
-			sort: 'order:asc'
-		}
+      easing: 'ease',
+      effects: 'fade rotateX',
+      duration: 700,
+      animateResizeContainer: false
+    },
+    load: {
+      sort: 'order:asc'
+    }
 	});
+
+	// $('#folio_container').mixItUp({
+	// 	animation: {
+	// 		effects: 'fade rotateX',
+	// 		duration: 700,
+	// 		easing: 'ease',
+	// 		animateResizeContainer: false
+	// 	},
+	// 	load: {
+	// 		sort: 'order:asc'
+	// 	}
+	// });
 
 	// Accordion
 
