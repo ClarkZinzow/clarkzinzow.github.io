@@ -104,6 +104,10 @@
             }
         }
 
+        /*
+         * Bug note:  Does not correctly calculate height when $el is hidden.  Does not include
+         *            padding.
+         */
         function calculateHeight($el) {
             var height = 0;
 
@@ -271,7 +275,8 @@
                         toggleTransition($curr);
                         calculateHeight($curr);
 
-                        $curr.css('max-height', $curr.data('oHeight'));
+                        // Should really fix the '+ 20' hack...
+                        $curr.css('max-height', $curr.data('oHeight') + 20);
                     }
                 }
             });
